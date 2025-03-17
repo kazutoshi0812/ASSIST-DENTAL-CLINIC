@@ -45,10 +45,10 @@
             <button type="button" class="btn btn-dark dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown">
               当院について
             </button>
-            <ul class="header__dropdown" id="dropdownMenu">
-                <li><a class="header__dropdown--item" href="#" target="_blank">院長挨拶</a></li>
-                <li><a class="header__dropdown--item" href="#" target="_blank">設備紹介</a></li>
-                <li><a class="header__dropdown--item" href="#" target="_blank">会社概要</a></li>
+            <ul class="l-header__dropdown" id="dropdownMenu">
+                <li><a class="l-header__dropdown--item" href="#" target="_blank">院長挨拶</a></li>
+                <li><a class="l-header__dropdown--item" href="#" target="_blank">設備紹介</a></li>
+                <li><a class="l-header__dropdown--item" href="#" target="_blank">会社概要</a></li>
             </ul>
           </li>
         </ul>
@@ -63,5 +63,77 @@
     </div>
   </header>
 
+  <!-- hamburger menu -->
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- section main view -->
+  <section class="l-main__view">
+    <div class="l-mv__wrapper">
+      <h2 class="l-mv__main--catch-copy">
+        Make your life quality
+      </h2>
+      <img src="./images/mv-image.webp" alt="メインの施術中画像" class="l-mv__image">
+      <div class="l-mv__title">
+        <p class="l-mv__main--title">口腔環境からはじめる</p>
+        <p class="l-mv__main--title">ライフクオリティの向上</p>
+        <p class="l-mv__sub--title">自然な笑顔を引き出す口腔のケアを実現します</p>
+      </div>
+    </div>
+    <div class="l-mv__blog--wrapper">
+      <div class="l-mv__blog--contents">
+        <div class="l-mv__blog--contents-title">
+          <h3 class="l-mv__blog--title">新着情報</h3>
+          <p class="l-mv__blog--sub-title">News</p>
+        </div>
+        <div class="l-mv__blog--lineup">
+          <ul class="l-mv__blog--list">
+            <li class="l-mv__blog--item">
+              <a class="l-mv__blog--link" href="#">
+                <time datetime="2024.04.27">2024.04.27</time>
+                <p class="l-mv__blog--inner-title">タイトル</p>
+                <p class="l-mv__blog--inner-text">
+                  テキストテキストテキストテキスト...
+                </p>
+              </a>
+            </li>
+            <li class="l-mv__blog--item">
+              <a class="l-mv__blog--link" href="#">
+                  <time datetime="2024.04.27">2024.04.27</time>
+                  <p class="l-mv__blog--inner-title">タイトル</p>
+                <p class="l-mv__blog--inner-text">
+                  テキストテキストテキストテキスト...
+                </p>
+              </a>
+            </li>
+            <li class="l-mv__blog--item">
+              <a class="l-mv__blog--link" href="#">
+                  <time datetime="2024.04.27">2024.04.27</time>
+                  <p class="l-mv__blog--inner-title">タイトル</p>
+                <p class="l-mv__blog--inner-text">
+                  テキストテキストテキストテキスト...
+                </p>
+              </a>
+            </li>
+            
+            <div class="l-mv__blog--more-link">
+              <a href="#">もっと見る</a>
+              <div class="l-mv__blog--icon">
+                <div class="arrow"></div>
+            </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
