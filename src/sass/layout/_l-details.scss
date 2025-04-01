@@ -1,0 +1,33 @@
+@use 'global' as *;
+
+.l-details {
+    background-image: url(../images/section_details/details_bg@2x.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 80px;
+}
+.l-details__title--wrapper {
+    text-align: center;
+}
+.l-details__wrapper {
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto 66px;
+    gap: 27px;
+}
+.l-details__contents {
+    width: calc(100% - 81px / 4);
+}
+.l-details__contents img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.l-details__inner--title {
+    margin-bottom: 14px;
+    font-size: 22px;
+    text-align: center;
+}
+.l-details__inner--description {
+    font-size: 14px;
+}

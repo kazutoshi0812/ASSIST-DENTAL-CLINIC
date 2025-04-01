@@ -29,6 +29,7 @@
   <script defer src="./js/script.min.js"></script>
 </head>
 <body>
+<!-- Header -->
   <header class="l-header">
     <h1 class="l-header__logo">
       <a href="./index.html">
@@ -76,7 +77,7 @@
       <h2 class="l-mv__main--catch-copy">
         Make your life quality
       </h2>
-      <img src="./images/mv-image.webp" alt="メインの施術中画像" class="l-mv__image">
+      <img src="./images/section_main-view/mv-image.webp" alt="メインの施術中画像" class="l-mv__image">
       <div class="l-mv__title">
         <p class="l-mv__main--title">口腔環境からはじめる</p>
         <p class="l-mv__main--title">ライフクオリティの向上</p>
@@ -118,13 +119,12 @@
                 </p>
               </a>
             </li>
-            
-            <div class="l-mv__blog--more-link">
+            <button class="c-more--link l-mv__blog--more-link">
               <a href="#">もっと見る</a>
-              <div class="l-mv__blog--icon">
-                <div class="arrow"></div>
-            </div>
-            </div>
+              <div class="c-arrow--icon l-mv__blog--icon">
+                <div class="c-arrow arrow"></div>
+              </div>
+            </button>
           </ul>
         </div>
       </div>
@@ -135,28 +135,364 @@
   <section class="l-about-us">
     <div class="l-about__wrapper">
       <div class="l-about--image">
-        <img src="./images/about_image-1@2x.webp" alt="" class="l-about--first-image">
-        <img src="./images/about_image-2@2x.webp" alt="" class="l-about--second--image">
+        <img src="./images/section_about/about_image-1@2x.webp" alt="" class="l-about--first-image">
+        <img src="./images/section_about/about_image-2@2x.webp" alt="" class="l-about--second--image">
       </div>
       <div class="l-about__text-area">
         <div class="l-about__title--wrapper">
-          <p class="c-section--title">わたしたちについて</p>
+          <h2 class="c-section--title">わたしたちについて</h2>
           <p class="c-section--sub-title">About us</p>
           <p class="l-about--text">
             当院は、地域に密着した総合病院です。豊富な診療科目と高い専門性を持つ医師・スタッフが、患者さん一人ひとりに最適な医療を提供します。信頼のおける医療を追求し、安心して治療に臨んでいただける環境を整えています。最新の医療機器や設備を導入し、確かな診断と効果的な治療を実現します。また、患者さんのニーズに合わせたオーダーメイドのケアプランを立案し、続けていくためのサポートも充実しています。当院で皆さまの健康な暮らしをサポートいたします。
           </p>
-          <button class="l-section-about--button">
-            <a href="" class="c-button l-about--button">
-              当院について
-              <span class="l-about--arrow"></span>
-            </a>
-          </button>
+          <a href="" class="c-button l-about--button">
+            当院について
+            <span class="c-button--arrow l-about--arrow"></span>
+          </a>
         </div>
       </div>
     </div>
-
   </section>
 
+<!-- Detail section -->
+  <section class="l-details">
+    <div class="l-details__title--wrapper">
+      <h2 class="c-section--title">診療内容</h2>
+      <p class="c-section--sub-title">Treatment details</p>
+    </div>
+    <div class="l-details__wrapper">
+      <figure class="l-details__contents">
+        <img src="./images/section_datails/details_img-1@2x.webp" alt="治療器具画像">
+        <figcaption class="l-details__contents--inner">
+            <p class="l-details__inner--title">虫歯治療・予防歯科</p>
+            <p class="l-details__inner--description">
+              ここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入る
+            </p>
+        </figcaption>
+        <a href="#" class="c-more--link l-details--more-link">
+          もっと見る
+          <div class="c-arrow--icon l-details--icon">
+            <span class="c-arrow arrow"></span>
+          </div>
+        </a>
+      </figure>
+      <figure class="l-details__contents">
+        <img src="./images/section_datails/details_img-2@2x.webp" alt="治療器具画像">
+        <figcaption class="l-details__contents--inner">
+            <p class="l-details__inner--title">歯科矯正</p>
+            <p class="l-details__inner--description">
+              ここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入る
+            </p>
+        </figcaption>
+        <a href="#" class="c-more--link l-details--more-link">
+          もっと見る
+          <div class="c-arrow--icon l-details--icon">
+            <span class="c-arrow arrow"></span>
+          </div>
+        </a>
+      </figure>
+      <figure class="l-details__contents">
+        <img src="./images/section_datails/details_img-3@2x.webp" alt="治療器具画像">
+        <figcaption class="l-details__contents--inner">
+            <p class="l-details__inner--title">インプラント</p>
+            <p class="l-details__inner--description">
+              ここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入る
+            </p>
+        </figcaption>
+        <a href="#" class="c-more--link l-details--more-link">
+          もっと見る
+          <div class="c-arrow--icon l-details--icon">
+            <span class="c-arrow arrow"></span>
+          </div>
+        </a>
+      </figure>
+      <figure class="l-details__contents">
+        <img src="./images/section_datails/details_img-4@2x.webp" alt="治療器具画像">
+        <figcaption class="l-details__contents--inner">
+            <p class="l-details__inner--title">ホワイトニング</p>
+            <p class="l-details__inner--description">
+              ここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入る
+            </p>
+        </figcaption>
+        <a href="#" class="c-more--link l-details--more-link">
+          もっと見る
+          <div class="c-arrow--icon l-details--icon">
+            <span class="c-arrow arrow"></span>
+          </div>
+        </a>
+      </figure>
+    </div>
+    <a href="" class="c-button l-details--button">
+      料金はこちら
+      <span class="c-button--arrow l-details--arrow"></span>
+    </a>
+  </section>
+
+  <!-- Flow section -->
+  <section class="l-flow">
+    <div class="l-flow__title--wrapper">
+      <h2 class="c-section--title">治療の流れ</h2>
+      <p class="c-section--sub-title">Flow</p>
+    </div>
+    <div class="l-flow--wrapper">
+      <ul class="l-flow--list">
+        <li class="l-flow--item">
+          <div class="l-flow--number">01</div>
+          <img src="./images/section_flow/flow_icon-calendar @2x.png" alt="カレンダーのアイコン" class="l-flow--icon">
+          <p class="l-flow__item--text">
+            電話または<br>Web予約
+          </p>
+        </li>
+        <li class="l-flow--item">
+          <div class="l-flow--number">02</div>
+          <img src="./images/section_flow/flow_icon-hospital@2x.png" alt="カレンダーのアイコン" class="l-flow--icon">
+          <p class="l-flow__item--text">
+            来院
+          </p>
+        </li>
+        <li class="l-flow--item">
+          <div class="l-flow--number">03</div>
+          <img src="./images/section_flow/flow_icon-chack-list@2x.png" alt="カレンダーのアイコン" class="l-flow--icon">
+          <p class="l-flow__item--text">
+            問診
+          </p>
+        </li>
+        <li class="l-flow--item">
+          <div class="l-flow--number">04</div>
+          <img src="./images/section_flow/flow_icon-stethoscope @2x.png" alt="カレンダーのアイコン" class="l-flow--icon">
+          <p class="l-flow__item--text">
+            レントゲン<br>・治療
+          </p>
+        </li>
+      </ul>
+      <div class="c-triangle--wrapper">
+        <div class="c-triangle"></div>
+        <div class="c-triangle"></div>
+        <div class="c-triangle"></div>
+      </div>
+    </div>
+  </section>
+
+<!-- section message -->
+  <section class="l-message">
+    <div class="l-message__wrapper">
+      <h2 class="l-message--catch-copy">
+        Enjoy life!
+      </h2>
+      <img src="./images/section_message/message_image-1@2x.png" alt="" class="l-message--img">
+      <div class="l-message__title--wrapper">
+        <h2 class="c-section--title">院長ご挨拶</h2>
+        <p class="c-section--sub-title">Message</p>
+        <p class="l-message__text">
+          皆さまへ、院長の川上です。私たちの病院は、常に最高の医療と温かいサポートを提供することを使命としています。患者さまの健康と快適な生活をサポートするため、全力で取り組んでいます。信頼と安心をお届けする病院を目指し、スタッフ一同、心からのおもてなしを心掛けています。いつでも皆さまの健康をお守りするために、お待ちしております。
+        </p>
+      </div>
+    </div>
+
+    <div class="l-message__area--wrapper">
+      <ul class="l-message__area--list">
+        <li class="l-message__area--item">
+          <div class="l-message__area--img">
+            <img src="./images/section_message/message_image-2@2x.png" alt="">
+          </div>
+          <div class="l-message__area--inner">
+            <div class="l-message__area--number">
+              Point 01
+            </div>
+            <p class="l-message__list--title">
+              <span>最</span>高の医療と温かいサポートを
+            </p>
+            <div class="l-message__contents">
+              <p class="l-message--text">
+                当院では幅広い診療サービスを提供しており、地域住民の様々なニーズに対応しています。一般的な歯科治療だけでなく、予防歯科や審美歯科、小児歯科など、患者さんの個々の状況に合わせた治療を提供しています。地域の方々にとって必要なケアを一貫して提供し、歯の健康をサポートしています。
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="l-message__area--item">
+          <div class="l-message__area--img">
+            <img src="./images/section_message/message_image-3@2x.png" alt="" />
+          </div>
+          <div class="l-message__area--inner">
+            <div class="l-message__area--number">
+              Point 02
+            </div>
+            <p class="l-message__list--title">
+              <span>地</span>域の人々との信頼関係の構築
+            </p>
+            <div class="l-message__contents">
+              <p class="l-message--text">
+                患者さんとの信頼関係を大切にしています。患者さん一人ひとりの状態や希望に真摯に向き合い、丁寧なカウンセリングや説明を行っています。また、地域の人々とのコミュニティ活動やイベントへの参加なども積極的に行い、地域の中で愛される存在となっています。
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="l-message__area--item">
+          <div class="l-message__area--img">
+            <img src="./images/section_message/message_image-4@2x.png" alt="" />
+          </div>
+          <div class="l-message__area--inner">
+            <div class="l-message__area--number">
+              Point 03
+            </div>
+            <p class="l-message__list--title">
+              <span>快</span>適な環境と最新の技術の導入
+            </p>
+            <div class="l-message__contents">
+              <p class="l-message--text">
+                患者さんが心地よく通える診療環境を提供しています。待合室や診療室は清潔でリラックスできる空間となっており、患者さんのストレスを最小限に抑える工夫をしています。また、最新の歯科技術や設備の導入にも力を入れており、より効果的な治療を提供するための取り組みを行っています。地域の人々が安心して通える場所となっています。
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+<!-- clinic section -->
+  <section class="l-clinic">
+    <div class="slick__slider">
+            <ul class="slick__slider--list">
+                <li class="slick__slider--item">
+                    <img class="slick__slider--img" src="./img/pickup1.jpg" alt="スライド画像1">
+                </li>
+                <li class="slick__slider--item">
+                    <img class="slick__slider--img" src="./img/pickup2.jpg" alt="スライド画像2">
+                </li>
+                <li class="slick__slider--item">
+                    <img class="slick__slider--img" src="./img/pickup3.jpg" alt="スライド画像3">
+                </li>
+                <li class="slick__slider--item">
+                    <img class="slick__slider--img" src="./img/pickup4.jpg" alt="スライド画像4">
+                </li>
+                <li class="slick__slider--item">
+                    <img class="slick__slider--img" src="./img/pickup5.jpg" alt="スライド画像5">
+                </li>
+                <li class="slick__slider--item">
+                    <img class="slick__slider--img" src="./img/pickup6.jpg" alt="スライド画像6">
+                </li>
+                <li class="slick__slider--item">
+                    <img class="slick__slider--img" src="./img/pickup7.jpg" alt="スライド画像7">
+                </li>
+                <li class="slick__slider--item">
+                    <img class="slick__slider--img" src="./img/pickup8.jpg" alt="スライド画像8">
+                </li>
+                <li class="slick__slider--item">
+                    <img class="slick__slider--img" src="./img/pickup9.jpg" alt="スライド画像9">
+                </li>
+            </ul>
+        </div>
+  </section>
+
+<!-- section access -->
+  <section class="l-access">
+    <div class="l-access__wrapper">
+      <div class="c-section__title--wrapper">
+        <h2 class="c-section--title">アクセス</h2>
+        <p class="c-section--sub-title">Access</p>
+      </div>
+      <div class="l-access__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16138.98736832291!2d139.6979536562748!3d35.65734999456738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b3cfebd97c3%3A0x9d1dc973d8f995f5!2z44CSMTUwLTAwMDIg5p2x5Lqs6YO95riL6LC35Yy65riL6LC377yR5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1743347545739!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="l-address__wrapper">
+        <figure class="l-address__contents">
+          <h2 class="l-header__logo">
+            <a href="./index.html">
+              <img src="./images/ASSIST DENTAL CLINIC@2x.webp" alt="ロゴ画像" >
+            </a>
+          </h2>
+          <figcaption class="l-address__inner">
+            <div class="l-access--tel-number">
+              <a href="tel:03-0000-0000"><span>TEL.</span>03-0000-0000</a>
+            </div>
+            <address class="l-access--address">
+              <a href="https://maps.app.goo.gl/xrPyWuSEyne6CND9A" target="_blank">
+                〒111-1111　東京都渋谷区青山1-1-1
+              </a>
+            </address>
+            <p class="l-access--opening-hours">
+              営業時間  10:00〜19:00
+            </p>
+            <p class="l-access--regular-holiday">
+              定休日　木・土曜午後／土日祝日
+            </p>
+          </figcaption>
+        </figure>
+        <div class="hours__table-wrapper">
+          <table class="hours__table">
+            <thead class="hours__table-head">
+              <tr class="hours__table-row">
+                <th class="hours__table-header"></th>
+                <th class="hours__table-header">月</th>
+                <th class="hours__table-header">火</th>
+                <th class="hours__table-header">水</th>
+                <th class="hours__table-header">木</th>
+                <th class="hours__table-header">金</th>
+                <th class="hours__table-header">土</th>
+                <th class="hours__table-header">日・祝</th>
+              </tr>
+            </thead>
+            <tbody class="hours__table-body">
+              <tr class="hours__table-row">
+                <th class="hours__table-header">午前診察</th>
+                <td class="hours__table-cell">○</td>
+                <td class="hours__table-cell">○</td>
+                <td class="hours__table-cell">○</td>
+                <td class="hours__table-cell">○</td>
+                <td class="hours__table-cell">○</td>
+                <td class="hours__table-cell">○</td>
+                <td class="hours__table-cell">×</td>
+              </tr>
+              <tr class="hours__table-row">
+                <th class="hours__table-header">午後診察</th>
+                <td class="hours__table-cell">○</td>
+                <td class="hours__table-cell">○</td>
+                <td class="hours__table-cell">○</td>
+                <td class="hours__table-cell">×</td>
+                <td class="hours__table-cell">○</td>
+                <td class="hours__table-cell">×</td>
+                <td class="hours__table-cell">×</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="c-button l-access--button">
+      WEB予約はこちら
+      <span class="c-button--arrow l-access--arrow"></span>
+    </a>
+  </section>
+
+<!-- footer section -->
+  <footer class="l-footer">
+    <div class="l-footer__inner">
+      <a href="./index.html" class="l-footer--logo">
+        <img src="./images/ASSIST DENTAL CLINIC@2x.webp" alt="footerロゴ画像">
+      </a>
+      <nav class="l-footer__nav">
+        <ul class="l-footer__nav-list">
+          <li class="l-footer__nav-item"><a href="">新着情報</a></li>
+          <li class="l-footer__nav-item"><a href="">診察内容</a></li>
+          <li class="l-footer__nav-item"><a href="">治療の流れ</a></li>
+          <li class="l-footer__nav--item--dropdown">
+            <button type="button" class="btn btn-dark dropdown-toggle" id="l-footer__dropdown--Menu-button" data-bs-toggle="dropdown">
+              当院について
+            </button>
+            <ul class="l-footer__dropdown--list" id="l-footer__dropdown--Menu">
+                <li><a class="l-footer__dropdown--item" href="#" target="_blank">院長挨拶</a></li>
+                <li><a class="l-footer__dropdown--item" href="#" target="_blank">設備紹介</a></li>
+                <li><a class="l-footer__dropdown--item" href="#" target="_blank">会社概要</a></li>
+            </ul>
+          </li>
+          <li class="l-footer__nav-item"><a href="">プライバシーポリシー</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="l-footer__copyright">
+      &copy;2024 ASSIST DENTAL CLINIC All Rights Reserved.
+    </p>
+  </footer>
 
 <script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/script.js"></script>

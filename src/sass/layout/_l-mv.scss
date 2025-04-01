@@ -4,7 +4,8 @@
     position: relative;
 }
 
-.l-mv__main--catch-copy {
+.l-mv__main--catch-copy,
+.l-message--catch-copy {
     font-size: 3.25rem;
     color: #7bd1d5;
     position: absolute;
@@ -73,44 +74,4 @@
     gap: 20px;
 }
 
-.l-mv__blog--more-link {
-    color: #845C95;
-    margin-top: 24px;
-    justify-content: end;
-    position: relative;
-    display: flex;
-    gap: 7px;
-    transition: all .3s ease-in-out;
-}
-.l-mv__blog--more-link > a {
-    font-weight: bold;
-}
-
-.l-mv__blog--icon {
-    background-color: #8e44ad; /* 背景色 (紫) */
-    color: white; /* テキスト色 (白) */
-    border: none; /* 枠線無し */
-    border-radius: 50%; /* 円形に */
-    width: 20px; /* 幅 */
-    height: 20px; /* 高さ */
-    display: flex; /* フレックスボックスを使用 */
-    align-items: center; /* 中央揃え */
-    justify-content: center; /* 中央揃え */
-    cursor: pointer; /* ポインターカーソル */
-}
-
-.more--link:hover {
-    opacity: .7;
-}
-
-.arrow {
-    border: solid white; /* 矢印の色 */
-    border-width: 0 2px 2px 0; /* 矢印の形状 */
-    display: inline-block; /* インラインブロック */
-    // padding: 4px; /* 内側の余白 */
-    margin-right: 3px;
-    transform: rotate(-45deg); /* 45度回転 */
-    height: 7px;
-    width: 7px;
-}
 

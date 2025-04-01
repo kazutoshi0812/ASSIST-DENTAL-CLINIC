@@ -16,16 +16,16 @@
 
 // about button
 .l-about--button {
+    display: block;
     font-size: 14px;
     padding: 19px 0 17px;
     border-radius: 100vh;
-    margin: 0 auto;
+    margin: 70px 0 0 auto;
     width: 240px;
     color: #7BD1D5;
     border: 1px solid #7BD1D5;
     transition: all .3s ease-in-out;
 }
-
 .l-about--arrow {
     border: solid #7BD1D5; /* 矢印の色 */
     border-width: 0 2px 2px 0; /* 矢印の形状 */
@@ -38,10 +38,113 @@
     top: 45%;
     position: absolute;
 }
-
 .l-about--button:hover {
     color: #fff;
     border: 1px solid #7BD1D5;
     background-color: #7BD1D5;
     opacity: 1;
+}
+
+// detail section button
+.l-details--button {
+    display: block;
+    font-size: 14px;
+    padding: 19px 0 17px;
+    border-radius: 100vh;
+    margin: 0 auto;
+    width: 240px;
+    color: $white;
+    border: 1px solid $primary;
+    background-color: $primary;
+    transition: all .3s ease-in-out;
+}
+.l-details--arrow {
+    border: solid $white; /* 矢印の色 */
+    border-width: 0 2px 2px 0; /* 矢印の形状 */
+    display: inline-block; /* インラインブロック */
+    margin-right: 3px;
+    transform: rotate(-45deg); /* 45度回転 */
+    height: 10px;
+    width: 10px;
+    right: 20px;
+    top: 45%;
+    position: absolute;
+}
+
+// もっと見るボタン
+.c-more--link {
+    color: #845C95;
+    margin-top: 24px;
+    justify-content: end;
+    position: relative;
+    display: flex;
+    gap: 7px;
+    transition: all .3s ease-in-out;
+}
+.c-more--link > a {
+    font-weight: bold;
+}
+
+.c-arrow--icon {
+    background-color: #8e44ad; /* 背景色 (紫) */
+    color: white; /* テキスト色 (白) */
+    border: none; /* 枠線無し */
+    border-radius: 50%; /* 円形に */
+    width: 20px; /* 幅 */
+    height: 20px; /* 高さ */
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* 中央揃え */
+    justify-content: center; /* 中央揃え */
+    cursor: pointer; /* ポインターカーソル */
+}
+
+.c-more--link:hover {
+    opacity: .7;
+}
+
+.c-arrow {
+    border: solid white; /* 矢印の色 */
+    border-width: 0 2px 2px 0; /* 矢印の形状 */
+    display: inline-block; /* インラインブロック */
+    // padding: 4px; /* 内側の余白 */
+    margin-right: 3px;
+    transform: rotate(-45deg); /* 45度回転 */
+    height: 7px;
+    width: 7px;
+}
+
+
+// 診療内容のもっと見るボタン
+.c-more--link.l-details--more-link {
+    color: $primary;
+    margin: 20px 0 0 auto;
+}
+.c-arrow--icon.l-details--icon {
+    background-color: $primary;
+}
+
+// access section button
+.l-access--button {
+    display: block;
+    font-size: 14px;
+    padding: 19px 0 17px;
+    border-radius: 100vh;
+    margin: 0 auto;
+    width: 240px;
+    color: $white;
+    border: 1px solid #845C95;
+    background-color: #845C95;
+    transition: all .3s ease-in-out;
+}
+.l-access--arrow {
+    border: solid $white; /* 矢印の色 */
+    border-width: 0 2px 2px 0; /* 矢印の形状 */
+    display: inline-block; /* インラインブロック */
+    margin-right: 3px;
+    transform: rotate(-45deg); /* 45度回転 */
+    height: 10px;
+    width: 10px;
+    right: 20px;
+    top: 45%;
+    position: absolute;
 }

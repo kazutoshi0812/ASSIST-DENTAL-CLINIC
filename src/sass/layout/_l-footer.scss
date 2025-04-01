@@ -1,1 +1,33 @@
 @use 'global' as *;
+
+.l-footer {
+    background-color: #F8FFFF;
+    padding-top: 87px;
+    height: 330px;
+}
+.l-footer__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.l-footer--logo {
+    width: 35%;
+}
+.l-footer--logo img {
+    width: 100%;
+    padding-right: 102px;
+}
+.l-footer__nav-list {
+    display: flex;
+    gap: 36px;
+}
+.l-footer__nav--item--dropdown > button {
+    padding: 0;
+}
+
+.l-footer__copyright {
+    font-size: 12px;
+    text-align: center;
+    padding: 130px 0 32px;
+}

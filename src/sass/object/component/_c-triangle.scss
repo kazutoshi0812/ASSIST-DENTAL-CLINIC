@@ -1,0 +1,19 @@
+@use 'global' as *;
+
+.c-triangle--wrapper {
+    display: flex;
+    gap: 190px;
+    position: absolute;
+    top: 50%;
+    left: 184px;
+    transform: translate(0, -50%);
+}
+.c-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 16px solid #a4dde0;
+    border-right: 0;
+}
