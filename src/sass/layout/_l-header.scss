@@ -102,6 +102,8 @@
 
     @include mq(md) {
         width: auto;
+        font-size: clamp(1rem, 1.5vw, 2rem);
+        font-weight: 700;
     }
 }
 
@@ -180,6 +182,60 @@
         opacity: .3;
     }
 }
+
+// _l-header.scss に追記する内容
+
+.l-header {
+    // ... (既存の .l-header スタイル) ...
+
+    &__nav--item--dropdown {
+        position: relative; // ドロップダウンメニューの位置決めの基準点とするため
+
+        // ホバー時にドロップダウンメニューを表示
+        &:hover {
+        .l-header__dropdown {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            // 必要に応じてトランジションを追加してアニメーションさせる
+            // transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        }
+    }
+
+    &__dropdown {
+        // 初期状態は非表示
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute; // 親要素からの相対位置で配置
+        top: 100%; // 親メニュー項目のすぐ下に表示
+        left: 0; // 親メニュー項目の左端に合わせる
+        background-color: #fff; // 背景色（適宜変更してください）
+        border: 1px solid #eee; // 境界線（適宜変更してください）
+        padding: 15px; // 内側余白（適宜変更してください）
+        min-width: 180px; // 最小幅（適宜変更してください）
+        z-index: 100; // 他の要素より手前に表示
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // 影（適宜変更してください）
+        // 必要に応じてトランジションを追加
+        // transition: opacity 0.3s ease, visibility 0.3s ease;
+
+        // JavaScriptでのクリック表示制御用のクラス（例）
+        // &.is-active {
+        //   display: block;
+        //   opacity: 1;
+        //   visibility: visible;
+        // }
+    }
+
+    // ... (既存の .l-header スタイル) ...
+    }
+
+    // .dropdown-toggle に対するスタイル（必要に応じて）
+    // .dropdown-toggle {
+    //   cursor: pointer; // クリック可能であることを示す
+    // }
+
 
 
 

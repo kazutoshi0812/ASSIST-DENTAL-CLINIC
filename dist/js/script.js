@@ -36,3 +36,20 @@ jQuery(function ($) {
   });
 
 });
+
+
+// ドロップダウンメニューの表示・非表示
+$('.l-header__nav--item--dropdown').hover(
+  function() {
+    $(this).find('.l-header__dropdown').addClass('show');
+  },
+  function() {
+    $(this).find('.l-header__dropdown').removeClass('show');
+  }
+);
+
+// ドロップダウンメニューのクリックイベント
+$('.dropdown-toggle').on('click', function() {
+  var $dropdown = $(this).siblings('.l-header__dropdown');
+  $dropdown.toggleClass('show');
+});
