@@ -1,1 +1,73 @@
-@use "global" as *;
+@use 'global' as *;
+
+.l-access {
+    padding-bottom: 113px;
+}
+.l-access__wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.l-access__map {
+    width: 100%;
+    margin-bottom: 72px;
+}
+.l-access__map > iframe {
+    width: 100%;
+    border-radius: 50px;
+}
+.l-address__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+.l-address__contents {
+    width: 42%;
+}
+
+.hours {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #484848;
+    font-family: Arial, sans-serif;
+}
+
+.hours__title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.hours__table-wrapper {
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.hours__table {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.hours__table--bordered .hours__table-header, .hours__table--bordered .hours__table-cell {
+    border: 1px solid #484848;
+    text-align: center;
+}
+
+.hours__table-header, .hours__table-cell {
+    padding: 10px;
+    border-bottom: 1px solid #484848;
+    font-size: 14px;
+}
+
+.hours__table-header {
+    border-top: 1px solid #484848;
+    border-bottom: 1px solid #484848;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hours__table-cell {
+    font-weight: normal;
+}

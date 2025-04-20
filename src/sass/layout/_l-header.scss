@@ -2,16 +2,16 @@
 
 .l-header {
     display: flex;
-    height: 5rem;
-    background-color: #e1e1e1;
+    height: 4rem;
     align-items: center;
-    padding-left: 15px;
     justify-content: space-between;
     position: relative;
+    background-color: #fff;
+    width: 100%;
 
     @include mq(md) {
-        // height: 80px;
-        // padding: 0 15px;
+        height: 5rem;
+        padding-left: 7%;
     }
 }
 
@@ -33,43 +33,6 @@
 
     @include mq(md) {
         display: flex;
-    }
-}
-
-.l-header__nav {
-    // align-items: center;
-    // background: #999999;
-    // display: flex;
-    // flex-direction: column;
-    // height: 90vh;
-    // max-height: calc(100vh - 80px);
-    // overflow-y: auto;
-    // position: fixed;
-    // right: -120%;
-    // top: 80px;
-    // transition: all .6s;
-    // width: 100%;
-    // z-index: 999;
-
-    @include mq(lg) {
-        display: flex;
-        margin-top: 0;
-    }
-}
-
-.l-header__list {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-
-    &.open {
-        display: flex;
-    }
-
-    @include mq(md) {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
     }
 }
 
@@ -144,17 +107,20 @@
 
 /* ドロップダウンの基本スタイル */
 .l-header__dropdown {
-    background-color: #d2d2d2;
-    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0 0 20px 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
     display: none;
     list-style: none;
-    padding: 20px;
+    padding: 0 20px;
     position: absolute;
     width: 100%;
-    top: 100%;
+    top: 130%;
     left: 0;
     z-index: 100;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
 
     @include mq(md) {
         width: 163px;
@@ -220,6 +186,8 @@
 /*ドロップダウンの表示非表示を切り替えるためのクラス*/
 .l-header__dropdown.show {
     display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .header__dropdown {
@@ -238,10 +206,12 @@
 
     @include mq(md) {
         margin: 0;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: Noto Sans JP;
         line-height: 1.2;
-        align-items: center;
         padding-top: 15px;
+        background-color: #EDF5F5;
     }
 }
 .l-header--tel-number a {
@@ -281,3 +251,39 @@
 }
 
 
+
+// responsive
+// @media (max-width: 1200px) {
+//     .l-header__logo > img {
+//         width: 100px;
+//     }
+//     .l-header__nav--list {
+//         align-items: center;
+//         background: #999999;
+//         display: flex;
+//         flex-direction: column;
+//         height: 90vh;
+//         max-height: calc(100vh - 80px);
+//         overflow-y: auto;
+//         position: fixed;
+//         right: -120%;
+//         top: 80px;
+//         transition: all .6s;
+//         width: 100%;
+//         z-index: 999;
+//     }
+//     .l-header__nav--list li {
+//         margin: 10px 0;
+//         z-index: 999;
+//     }
+
+//     .hamburger {
+//         opacity: 1;
+//     }
+// }
+
+// @media (min-width: 1201px) {
+//     .hamburger {
+//         opacity: 0;
+//     }
+// }

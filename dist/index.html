@@ -21,12 +21,10 @@
   <meta name="msnbot" content="noindex, nofollow" /> <!-- Bingのクローラーにインデックスしないよう指示 -->
   <meta name="slurp" content="noindex, nofollow" /> <!-- Yahooのクローラーにインデックスしないよう指示 -->
   <!-- ファビコン -->
-  <link rel="icon" href="" />
+  <link rel="icon" href="./images/favicon/favcicon@2x.png" type="image/png">
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.min.css">
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./js/script.min.js"></script>
+  
 </head>
 <body>
 <!-- Header -->
@@ -38,15 +36,15 @@
     </h1>
     <div class="l-header__inner">
       <nav class="l-header__nav">
-        <ul class="l-header__list">
-          <li class="l-header__item"><a href="">新着情報</a></li>
-          <li class="l-header__item"><a href="">診察内容</a></li>
-          <li class="l-header__item"><a href="">治療の流れ</a></li>
+        <ul class="l-header__nav--list">
+          <li class="l-header__nav--item"><a href="">新着情報</a></li>
+          <li class="l-header__nav--item"><a href="">診察内容</a></li>
+          <li class="l-header__nav--item"><a href="">治療の流れ</a></li>
           <li class="l-header__nav--item--dropdown">
-            <button type="button" class="btn btn-dark dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown">
+            <button type="button" class="btn btn-dark dropdown-toggle" id="l-header__dropdown--Menu-button" data-bs-toggle="dropdown">
               当院について
             </button>
-            <ul class="l-header__dropdown" id="dropdownMenu">
+            <ul class="l-header__dropdown" id="l-header__dropdown--Menu">
                 <li><a class="l-header__dropdown--item" href="#" target="_blank">院長挨拶</a></li>
                 <li><a class="l-header__dropdown--item" href="#" target="_blank">設備紹介</a></li>
                 <li><a class="l-header__dropdown--item" href="#" target="_blank">会社概要</a></li>
@@ -493,7 +491,9 @@
       &copy;2024 ASSIST DENTAL CLINIC All Rights Reserved.
     </p>
   </footer>
-
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script defer src="./js/script.min.js"></script>
 <script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
