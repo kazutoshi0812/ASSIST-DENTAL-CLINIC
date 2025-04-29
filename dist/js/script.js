@@ -36,30 +36,3 @@ jQuery(function ($) {
   });
 
 });
-
-
-// ドロップダウンメニューの表示制御
-$('.l-header__nav--item--dropdown button').hover(
-  function() {
-    $(this).siblings('.l-header__dropdown').fadeIn(200).addClass('show');
-  },
-  function() {
-    // マウスが離れた時にすぐ消えないよう少し遅延
-    let $dropdown = $(this).siblings('.l-header__dropdown');
-    setTimeout(function() {
-      if (!$dropdown.is(':hover')) {
-        $dropdown.fadeOut(200).removeClass('show');
-      }
-    }, 300);
-  }
-);
-
-// ドロップダウンメニュー自体のホバー制御
-$('.l-header__dropdown').hover(
-  function() {
-    $(this).show().addClass('show');
-  },
-  function() {
-    $(this).fadeOut(200).removeClass('show');
-  }
-);

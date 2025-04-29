@@ -1,0 +1,102 @@
+@use 'global' as *;
+
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9fb;
+}
+
+/* Section Styles */
+#l-about-us__subpage {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+/* Container */
+.l-about-us__subpage--container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Breadcrumbs */
+.l-breadcrumbs {
+    margin-bottom: 20px;
+}
+
+.l-breadcrumbs__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.l-breadcrumbs__item {
+    margin-right: 10px;
+}
+
+.l-breadcrumbs__link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Title and Subtitle */
+.l-about-us--subpage__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.c-section--title {
+    font-size: 26px;
+    color: #333333;
+}
+
+.c-section--sub-title {
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Wrapper */
+.l-about-us--subpage__wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Image Styles */
+.l-about-us__docter-image {
+    width: 100%;
+    max-width: 400px; /* Set the image max-width */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Caption */
+.l-about-us--subpage__caption {
+    margin-top: 20px;
+    color: #555555;
+}
+
+.l-about-us--subpage__text {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.l-about-us--signature {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .c-section--title {
+        font-size: 22px;
+    }
+
+    .c-section--sub-title {
+        font-size: 14px;
+    }
+}
+
