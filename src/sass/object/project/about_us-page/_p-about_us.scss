@@ -1,25 +1,18 @@
 @use 'global' as *;
 
-/* General Styles */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f9fb;
-}
-
 /* Section Styles */
-#l-about-us__subpage {
+.l-about-us__subpage {
     width: 100%;
-    padding: 40px 20px;
-    background-color: #ffffff;
+    background-image: url('../images/about_us-page/section_about-us/background-img@2x.png');
+    background-size: 100% 258px;
+    background-position: top 0 center;
+    background-repeat: no-repeat;
 }
 
 /* Container */
 .l-about-us__subpage--container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 /* Breadcrumbs */
@@ -39,7 +32,6 @@ body {
 
 .l-breadcrumbs__link {
     text-decoration: none;
-    color: #007bff;
 }
 
 /* Title and Subtitle */
@@ -65,8 +57,13 @@ body {
     text-align: center;
 }
 
+.l-about-us--subpage__inner {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
 /* Image Styles */
-.l-about-us__docter-image {
+.l-about-us__doctor-image {
     width: 100%;
     max-width: 400px; /* Set the image max-width */
     height: auto;
@@ -75,18 +72,29 @@ body {
 
 /* Caption */
 .l-about-us--subpage__caption {
-    margin-top: 20px;
-    color: #555555;
+    color: $text-color;
 }
 
 .l-about-us--subpage__text {
-    margin: 10px 0;
     line-height: 1.6;
+    display: flex;
+    text-align: start;
+}
+
+.l-breadcrumbs__item.arrow {
+    font-size: 20px;
+    position: relative;
+    top: -5px;
 }
 
 .l-about-us--signature {
-    font-weight: bold;
-    margin-top: 10px;
+    font-size: 22px;
+    margin-top: 29px;
+    display: block;
+    text-align: end;
+}
+.l-about-us--signature > span {
+    font-size: 14px;
 }
 
 /* Responsive Styles */
