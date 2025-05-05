@@ -1,0 +1,30 @@
+@use 'global' as *;
+
+.l-section--facility {
+    background-image: url('../images/about_us-page/section_facility/background-image@2x.png');
+    background-size: 64%;
+    background-repeat: no-repeat;
+    padding: 110px 0 116px;
+}
+.l-section__facility--inner {
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+}
+.l-section__facility--inner.col-2 {
+    padding: 46px 172px 0;
+}
+.l-section__facility--contents {
+    width: calc(100% - 60px / 3);
+}
+.l-facility--img {
+    height: 186px;
+}
+.l-facility__inner--title {
+    padding: 24px 0 11px;
+    font-size: 20px;
+}
+.l-facility__inner--description {
+    font-size: 14px;
+}
