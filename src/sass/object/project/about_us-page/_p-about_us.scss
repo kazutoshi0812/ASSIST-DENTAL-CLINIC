@@ -7,6 +7,7 @@
     background-size: 100% 258px;
     background-position: top 0 center;
     background-repeat: no-repeat;
+    margin-bottom: 110px;
 }
 
 /* Container */
@@ -53,14 +54,16 @@
 /* Wrapper */
 .l-about-us--subpage__wrapper {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 47px;
+    padding: 35px 100px 0;
     text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
 }
 
 .l-about-us--subpage__inner {
     display: flex;
     gap: 30px;
-    align-items: center;
 }
 /* Image Styles */
 .l-about-us__doctor-image {
@@ -96,6 +99,86 @@
 .l-about-us--signature > span {
     font-size: 14px;
 }
+
+.l-about-us__subpage__career--wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.l-about-us__subpage__career--inner {
+    display: flex;
+    gap: 30px;
+    padding: 0 100px;
+}
+
+.l-career--contents {
+    width: calc(100% - 30px);
+}
+
+.l-career__contents--title {
+    font-size: 22px;
+    font-weight: normal;
+    background-color: $primary;
+    width: 20%;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+.l-career__contents--title.qualification {
+    width: 50%;
+}
+.l-career__contents--text {
+    padding: 24.5px 0 22px;
+    border-top: 1px solid $primary;
+    font-size: 14px;
+    
+}
+.l-career__contents--text:last-of-type {
+    border-bottom: 1px solid $primary;
+}
+
+.l-career--wrapper {
+    width: calc(100% - 30px);
+}
+
+.qualification {
+
+}
+
+.l-career--inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 22px;
+    font-size: 14px;
+}
+.l-career--inner:first-of-type {
+    border-top: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+}
+
+  // 最後の .l-career--inner にだけ border-bottom
+.l-career--inner:last-of-type {
+    border-bottom: 1px solid $primary;
+}
+
+.l-career--inner--title {
+    font-weight: normal;
+}
+
+.l-career__inner--list {
+    margin: 0 auto;
+}
+
+.l-career__inner--item {
+
+}
+
+
+
+
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
