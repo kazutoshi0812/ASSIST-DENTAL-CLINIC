@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
 }
+
 .l-header__item:not(:last-child)::after,
 .l-header__nav--item--dropdown:not(:last-child)::after,
 .l-footer__nav--item--dropdown:not(:last-child)::after {
