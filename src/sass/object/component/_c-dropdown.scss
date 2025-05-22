@@ -19,19 +19,28 @@
     background-color: #707070; /* 線の色を指定 */
 }
 
-.l-header__nav--item--dropdown > button:hover,
-.l-footer__nav--item--dropdown > button:hover {
+.l-header__nav--item--dropdown > button:hover {
     color: $primary;
     font-weight: bold;
     transition: all .1s ease-in-out;
 
-    & + .l-header__dropdown,
-    & + .l-footer__dropdown--list {
+    & + .l-header__dropdown {
         display: block;
         opacity: 1;
         visibility: visible;
     }
 }
+.l-footer__nav--item--dropdown {
+    position: relative;
+
+    &:hover > .l-footer__dropdown--list {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transition: all .3s ease-in-out;
+    }
+}
+
 
 .dropdown-toggle {
     width: 100%;
