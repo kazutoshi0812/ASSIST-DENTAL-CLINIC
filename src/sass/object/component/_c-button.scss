@@ -46,7 +46,7 @@
 }
 
 // detail section button
-.l-details--button {
+.p-details--button {
     display: block;
     font-size: 14px;
     padding: 19px 0 17px;
@@ -58,7 +58,7 @@
     background-color: $primary;
     transition: all .3s ease-in-out;
 }
-.l-details--arrow {
+.p-details--arrow {
     border: solid $white; /* 矢印の色 */
     border-width: 0 2px 2px 0; /* 矢印の形状 */
     display: inline-block; /* インラインブロック */
@@ -124,7 +124,7 @@
 }
 
 // access section button
-.l-access--button {
+.p-access--button {
     display: block;
     font-size: 14px;
     padding: 19px 0 17px;
@@ -136,7 +136,7 @@
     background-color: #845C95;
     transition: all .3s ease-in-out;
 }
-.l-access--arrow {
+.p-access--arrow {
     border: solid $white; /* 矢印の色 */
     border-width: 0 2px 2px 0; /* 矢印の形状 */
     display: inline-block; /* インラインブロック */
