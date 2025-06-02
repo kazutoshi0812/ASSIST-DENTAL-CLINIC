@@ -1,4 +1,3 @@
-
 jQuery(function ($) {
   
   // ページトップボタン
@@ -35,4 +34,18 @@ jQuery(function ($) {
     return false;
   });
 
+  // 診療内容ボタンのクリックイベント
+  $('.c-contact__button').on('click', function() {
+    $(this).toggleClass('is-active');
+  });
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const buttons = document.querySelectorAll('.c-contact__button');
+
+//   buttons.forEach(button => {
+//       button.addEventListener('click', function () {
+//           this.classList.toggle('is-active');
+//       });
+//   });
+// });

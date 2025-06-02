@@ -148,3 +148,32 @@
     top: 45%;
     position: absolute;
 }
+
+// contact section button
+.c-contact__link--button {
+    width: 100%;
+}
+.c-contact--button {
+    display: block;
+    font-size: 14px;
+    padding: 19px 0 17px;
+    border-radius: 100vh;
+    margin: 0 auto;
+    width: 240px;
+    color: $white;
+    border: 1px solid $primary;
+    background-color: $primary;
+    transition: all .3s ease-in-out;
+}
+.c-contact--arrow {
+    border: solid $white; /* 矢印の色 */
+    border-width: 0 2px 2px 0; /* 矢印の形状 */
+    display: inline-block; /* インラインブロック */
+    margin-right: 3px;
+    transform: rotate(-45deg); /* 45度回転 */
+    height: 10px;
+    width: 10px;
+    right: 20px;
+    top: 45%;
+    position: absolute;
+}

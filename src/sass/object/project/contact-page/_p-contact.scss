@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.p-contact {
+    background-image: url(../images/contact-page/background-img@2x.png);
+    background-size: 100% 258px;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+.p-contact__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 52px 0;
+    background-color: $white;
+    border-radius: 20px;
+}

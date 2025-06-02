@@ -33,7 +33,11 @@ body {
 
 // ホバー
 a,
-button {
+button,
+label,
+input,
+select,
+textarea {
   @include mq(md) {
     transition: .3s;
     &:hover {

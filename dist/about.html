@@ -1,278 +1,289 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
-    <!-- meta情報 -->
-    <title>ASSIST DENTAL CLINIC -当院について-</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!-- ogp -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- meta情報 -->
+        <title>ASSIST DENTAL CLINIC -当院について-</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!-- ogp -->
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:description" content="" />
 
-    <meta name="robots" content="noindex, nofollow" /> <!-- 検索エンジンにインデックスしないよう指示 -->
-    <meta name="googlebot" content="noindex, nofollow" /> <!-- Googleのクローラーにインデックスしないよう指示 -->
-    <meta name="msnbot" content="noindex, nofollow" /> <!-- Bingのクローラーにインデックスしないよう指示 -->
-    <meta name="slurp" content="noindex, nofollow" /> <!-- Yahooのクローラーにインデックスしないよう指示 -->
-    <!-- ファビコン -->
-    <link rel="icon" href="./images/favicon-image/favicon@2x.webp" type="image/png">
-    <!-- css -->
-    <link rel="stylesheet" href="./css/styles.min.css">
-
-</head>
-<body>
-    <!-- Header -->
-    <header class="l-header">
-        <h1 class="l-header__logo">
-        <a href="./index.html">
-            <img src="./images/ASSIST DENTAL CLINIC@2x.webp" alt="ロゴ画像" >
-        </a>
-        </h1>
-        <div class="l-header__inner">
-        <nav class="l-header__nav">
-            <ul class="l-header__nav--list">
-                <li class="l-header__nav--item"><a href="">新着情報</a></li>
-                <li class="l-header__nav--item"><a href="">診察内容</a></li>
-                <li class="l-header__nav--item"><a href="">治療の流れ</a></li>
-                <li class="l-header__nav--item--dropdown">
-                    <button type="button" class="btn btn-dark dropdown-toggle" id="l-header__dropdown--Menu-button" data-bs-toggle="dropdown">
-                        当院について
-                    </button>
-                    <ul class="l-header__dropdown" id="l-header__dropdown--Menu">
-                        <li><a class="l-header__dropdown--item" href="#" target="_blank">院長挨拶</a></li>
-                        <li><a class="l-header__dropdown--item" href="#" target="_blank">設備紹介</a></li>
-                        <li><a class="l-header__dropdown--item" href="#" target="_blank">会社概要</a></li>
+        <!-- 検索エンジンにインデックスしないよう指示 -->
+        <meta name="robots" content="noindex, nofollow" />
+        <!-- Googleのクローラーにインデックスしないよう指示 -->
+        <meta name="googlebot" content="noindex, nofollow" />
+        <!-- Bingのクローラーにインデックスしないよう指示 -->
+        <meta name="msnbot" content="noindex, nofollow" />
+        <!-- Yahooのクローラーにインデックスしないよう指示 -->
+        <meta name="slurp" content="noindex, nofollow" />
+        <!-- ファビコン -->
+        <link rel="icon" href="./images/favicon-image/favicon@2x.webp" type="image/png" />
+        <!-- css -->
+        <link rel="stylesheet" href="./css/styles.min.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="l-header">
+            <h1 class="l-header__logo">
+                <a href="./index.html">
+                    <img src="./images/ASSIST DENTAL CLINIC@2x.webp" alt="ロゴ画像" />
+                </a>
+            </h1>
+            <div class="l-header__inner">
+                <nav class="l-header__nav">
+                    <ul class="l-header__nav--list">
+                        <li class="l-header__nav--item">
+                            <a href="">新着情報</a>
+                        </li>
+                        <li class="l-header__nav--item">
+                            <a href="">診察内容</a>
+                        </li>
+                        <li class="l-header__nav--item">
+                            <a href="">治療の流れ</a>
+                        </li>
+                        <li class="l-header__nav--item--dropdown">
+                            <button type="button" class="btn btn-dark dropdown-toggle" id="l-header__dropdown--Menu-button" data-bs-toggle="dropdown">当院について</button>
+                            <ul class="l-header__dropdown" id="l-header__dropdown--Menu">
+                                <li>
+                                    <a class="l-header__dropdown--item" href="#" target="_blank">院長挨拶</a>
+                                </li>
+                                <li>
+                                    <a class="l-header__dropdown--item" href="#" target="_blank">設備紹介</a>
+                                </li>
+                                <li>
+                                    <a class="l-header__dropdown--item" href="#" target="_blank">会社概要</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="l-header--tel-number">
-            <a href="tel:03-0000-0000"><span>TEL.</span>03-0000-0000</a>
-            <p class="time">営業時間  10:00〜19:00</p>
-        </div>
-        <div class="l-header__contact--button">
-            <a href="">Web予約</a>
-        </div>
-        </div>
-    </header>
-
-    <!-- hamburger menu -->
-    <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-
-    <!-- 当院について -->
-    <section id="p-about-us__subpage" class="p-about-us__subpage">
-        <div class="p-about-us__subpage--container">
-            <div class="p-about-us--subpage__wrapper">
-                <!-- パンくずリスト -->
-                <div class="p-breadcrumbs">
-                    <div class="p-breadcrumbs__inner">
-                        <ul class="p-breadcrumbs__list">
-                            <li class="p-breadcrumbs__item">
-                                <a href="index.html" class="p-breadcrumbs__link">TOP</a>
-                            </li>
-                            <li class="p-breadcrumbs__item arrow">&gt;</li>
-                            <li class="p-breadcrumbs__item">当院について</li>
-                        </ul>
-                    </div>
+                </nav>
+                <div class="l-header--tel-number">
+                    <a href="tel:03-0000-0000"><span>TEL.</span>03-0000-0000</a>
+                    <p class="time">営業時間 10:00〜19:00</p>
                 </div>
-                <div class="p-about-us--subpage__title">
-                    <h2 class="c-section--title">当院について</h2>
-                    <p class="c-section--sub-title">About us</p>
+                <div class="l-header__contact--button">
+                    <a href="contact.html" target="_blank">Web予約</a>
                 </div>
-                <figure class="p-about-us--subpage__inner">
-                    <img src="../src/images/about_us-pages/about_us-section/doctor-img@2x.png" alt="院長写真" class="p-about-us__doctor-image">
-                    <figcaption class="p-about-us--subpage__caption">
-                        <p class="p-about-us--subpage__text">
-                            皆さまへ、院長の川上です。私たちの病院は、常に最高の医療と温かいサポートを提供することを使命としています。患者さまの健康と快適な生活をサポートするため、全力で取り組んでいます。信頼と安心をお届けする病院を目指し、スタッフ一同、心からのおもてなしを心掛けています。いつでも皆さまの健康をお守りするために、お待ちしております。
-                        </p>
-                        <p class="p-about-us--signature">
-                            <span>院長　</span>田中　太郎</p>
-                    </figcaption>
-                </figure>
             </div>
+        </header>
+
+        <!-- hamburger menu -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <section class="p-about-us__subpage__career--wrapper">
-            <div class="p-about-us__subpage__career--inner">
-                <section class="p-career--contents">
-                    <h3 class="p-career__contents--title">略歴</h3>
-                    <p class="p-career__contents--text">国立日本大学歯科学部卒業</p>
-                    <p class="p-career__contents--text">国立日本大学歯科口腔外科入局</p>
-                    <p class="p-career__contents--text">同大学麻酔科、救急科研修</p>
-                    <p class="p-career__contents--text">医療法人日本会　日本本街病院勤務（高齢者、有病者、小児）</p>
-                </section>
-                <section class="p-career--wrapper">
-                    <h3 class="p-career__contents--title qualification">資格・所属学会</h3>
-                    <article class="p-career--contents">
-                        <section class="p-career--inner">
-                            <h4 class="p-career--inner--title">【所属学会】</h4>
-                            <ul class="p-career__inner--list">
-                                <li class="p-career__inner--item">日本口腔外科学会</li>
-                                <li class="p-career__inner--item">日本口腔インプラント学会</li>
-                                <li class="p-career__inner--item">日本成人矯正歯科学会</li>
-                                <li class="p-career__inner--item">日本成人インプラント学会</li>
+
+        <!-- 当院について -->
+        <section id="p-about-us__subpage" class="p-about-us__subpage">
+            <div class="p-about-us__subpage--container">
+                <div class="p-about-us--subpage__wrapper">
+                    <!-- パンくずリスト -->
+                    <div class="p-breadcrumbs">
+                        <div class="p-breadcrumbs__inner">
+                            <ul class="p-breadcrumbs__list">
+                                <li class="p-breadcrumbs__item">
+                                    <a href="index.html" class="p-breadcrumbs__link">TOP</a>
+                                </li>
+                                <li class="p-breadcrumbs__item arrow">&gt;</li>
+                                <li class="p-breadcrumbs__item">当院について</li>
                             </ul>
-                        </section>
-                        <section class="p-career--inner">
-                            <h4 class="p-career--inner--title">【資格・研修歴】</h4>
-                            <ul class="p-career__inner--list">
-                                <li class="p-career__inner--item">口腔感染予防外来認定医</li>
-                                <li class="p-career__inner--item">ノーベルインプラント認定医</li>
-                                <li class="p-career__inner--item">SPIインプラント認定医</li>
-                                <li class="p-career__inner--item">日本口腔インプラント認定医</li>
-                            </ul>
-                        </section>
-                    </article>
-                </section>
+                        </div>
+                    </div>
+                    <div class="p-about-us--subpage__title">
+                        <h2 class="c-section--title">当院について</h2>
+                        <p class="c-section--sub-title">About us</p>
+                    </div>
+                    <figure class="p-about-us--subpage__inner">
+                        <img src="../src/images/about_us-pages/about_us-section/doctor-img@2x.png" alt="院長写真" class="p-about-us__doctor-image" />
+                        <figcaption class="p-about-us--subpage__caption">
+                            <p class="p-about-us--subpage__text">皆さまへ、院長の川上です。私たちの病院は、常に最高の医療と温かいサポートを提供することを使命としています。患者さまの健康と快適な生活をサポートするため、全力で取り組んでいます。信頼と安心をお届けする病院を目指し、スタッフ一同、心からのおもてなしを心掛けています。いつでも皆さまの健康をお守りするために、お待ちしております。</p>
+                            <p class="p-about-us--signature"><span>院長　</span>田中　太郎</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <section class="p-about-us__subpage__career--wrapper">
+                <div class="p-about-us__subpage__career--inner">
+                    <section class="p-career--contents">
+                        <h3 class="p-career__contents--title">略歴</h3>
+                        <p class="p-career__contents--text">国立日本大学歯科学部卒業</p>
+                        <p class="p-career__contents--text">国立日本大学歯科口腔外科入局</p>
+                        <p class="p-career__contents--text">同大学麻酔科、救急科研修</p>
+                        <p class="p-career__contents--text">医療法人日本会　日本本街病院勤務（高齢者、有病者、小児）</p>
+                    </section>
+                    <section class="p-career--wrapper">
+                        <h3 class="p-career__contents--title qualification">資格・所属学会</h3>
+                        <article class="p-career--contents">
+                            <section class="p-career--inner">
+                                <h4 class="p-career--inner--title">【所属学会】</h4>
+                                <ul class="p-career__inner--list">
+                                    <li class="p-career__inner--item">日本口腔外科学会</li>
+                                    <li class="p-career__inner--item">日本口腔インプラント学会</li>
+                                    <li class="p-career__inner--item">日本成人矯正歯科学会</li>
+                                    <li class="p-career__inner--item">日本成人インプラント学会</li>
+                                </ul>
+                            </section>
+                            <section class="p-career--inner">
+                                <h4 class="p-career--inner--title">【資格・研修歴】</h4>
+                                <ul class="p-career__inner--list">
+                                    <li class="p-career__inner--item">口腔感染予防外来認定医</li>
+                                    <li class="p-career__inner--item">ノーベルインプラント認定医</li>
+                                    <li class="p-career__inner--item">SPIインプラント認定医</li>
+                                    <li class="p-career__inner--item">日本口腔インプラント認定医</li>
+                                </ul>
+                            </section>
+                        </article>
+                    </section>
+                </div>
+            </section>
+        </section>
+
+        <!-- 設備紹介 -->
+        <section id="p-section--facility" class="p-section--facility">
+            <div class="p-section__facility--wrapper">
+                <div class="p-about-us--subpage__title">
+                    <h2 class="c-section--title">設備紹介</h2>
+                    <p class="c-section--sub-title">Facility</p>
+                </div>
+                <div class="p-section__facility--inner col-3">
+                    <figure class="p-section__facility--contents">
+                        <img class="p-facility--img" src="../src/images/about_us-pages/facility-section/facility-image1@2x.png" alt="X線装置画像" />
+                        <figcaption class="p-facility__contents--inner">
+                            <p class="p-facility__inner--title">デジタルX線装置</p>
+                            <p class="p-facility__inner--description">当院のデジタルX線装置は、従来のフィルム方式に比べて放射線量を大幅に削減し、より安全で迅速な診断を可能にします。また、即座に高解像度の画像を確認できるため、治療計画の立案がスムーズに行えます。</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="p-section__facility--contents">
+                        <img class="p-facility--img" src="../src/images/about_us-pages/facility-section/facility-image2@2x.png" alt="レーザー治療器画像" />
+                        <figcaption class="p-facility__contents--inner">
+                            <p class="p-facility__inner--title">レーザー治療器</p>
+                            <p class="p-facility__inner--description">痛みを軽減し、治癒を促進するレーザー治療器を使用しています。虫歯の治療や歯茎の治療において、高精度かつ低侵襲な治療が可能です。出血や痛みが少なく、治療後の回復が早いのが特徴です。</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="p-section__facility--contents">
+                        <img class="p-facility--img" src="../src/images/about_us-pages/facility-section/facility-image3@2x.png" alt="滅菌対策設備画像" />
+                        <figcaption class="p-facility__contents--inner">
+                            <p class="p-facility__inner--title">滅菌対策設備</p>
+                            <p class="p-facility__inner--description">徹底した衛生管理を行うため、最新の滅菌対策設備を完備しています。器具の洗浄・消毒には最新の滅菌機器を使用し、院内感染の予防に努めています。患者様が安心して治療を受けられる環境を常に維持しています。</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="p-section__facility--inner col-2">
+                    <figure class="p-section__facility--contents">
+                        <img class="p-facility--img" src="../src/images/about_us-pages/facility-section/facility-image4@2x.png" alt="X線装置画像" />
+                        <figcaption class="p-facility__contents--inner">
+                            <p class="p-facility__inner--title">3D光学スキャン</p>
+                            <p class="p-facility__inner--description">小型カメラでお口の中をわずか数分スキャンするだけで歯型を採ることができます。型取りの負担を軽減し、嘔吐反射の強い方も安心です。さらに精密なスキャニング技術で得た情報を元に作られるマウスピース型矯正装置は高精度に仕上がるため、矯正治療の精度・効率性が向上します。</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="p-section__facility--contents">
+                        <img class="p-facility--img" src="../src/images/about_us-pages/facility-section/facility-image5@2x.png" alt="レーザー治療器画像" />
+                        <figcaption class="p-facility__contents--inner">
+                            <p class="p-facility__inner--title">高性能洗浄器</p>
+                            <p class="p-facility__inner--description">滅菌処理を行う前に器具の汚れを洗浄し、熱水消毒、乾燥まで行う器械です。手洗いでは不十分な血液や有機質的な汚れを徹底的に除去し、その後の滅菌効果を高めます。</p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
-    </section>
 
-    <!-- 設備紹介 -->
-    <section id="p-section--facility" class="p-section--facility">
-        <div class="p-section__facility--wrapper">
-            <div class="p-about-us--subpage__title">
-                <h2 class="c-section--title">設備紹介</h2>
-                <p class="c-section--sub-title">Facility</p>
+        <!-- 会社概要 -->
+        <section id="p-section--company" class="p-section--company">
+            <div class="p-section__company--wrapper">
+                <div class="p-about-us--subpage__title">
+                    <h2 class="c-section--title">会社概要</h2>
+                    <p class="c-section--sub-title">Company overview</p>
+                </div>
+                <div class="p-section__company--inner">
+                    <table class="info-table">
+                        <tr>
+                            <th>商号</th>
+                            <td>ASSIST DENTAL CLINIC</td>
+                        </tr>
+                        <tr>
+                            <th>設立</th>
+                            <td>2024年1月1日</td>
+                        </tr>
+                        <tr>
+                            <th>所在地</th>
+                            <td>&#12306;111-1111<br />東京都中央区銀座6-1-1</td>
+                        </tr>
+                        <tr>
+                            <th>代表者</th>
+                            <td>田中　太郎</td>
+                        </tr>
+                        <tr>
+                            <th>資本金</th>
+                            <td>1000万</td>
+                        </tr>
+                        <tr>
+                            <th>WEBサイト</th>
+                            <td>
+                                <a href="https://www.assist-dental.jp" target="_blank">https://www.assist-dental.jp</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>事業内容</th>
+                            <td>一般歯科・予防歯科・矯正歯科・審美歯科・インプラント治療・小児歯科・口腔外科</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <div class="p-section__facility--inner col-3">
-                <figure class="p-section__facility--contents">
-                    <img class="p-facility--img" src="../src/images/about_us-pages/facility-section/facility-image1@2x.png" alt="X線装置画像">
-                    <figcaption class="p-facility__contents--inner">
-                        <p class="p-facility__inner--title">デジタルX線装置</p>
-                        <p class="p-facility__inner--description">
-                            当院のデジタルX線装置は、従来のフィルム方式に比べて放射線量を大幅に削減し、より安全で迅速な診断を可能にします。また、即座に高解像度の画像を確認できるため、治療計画の立案がスムーズに行えます。
-                        </p>
-                    </figcaption>
-                </figure>
-                <figure class="p-section__facility--contents">
-                    <img class="p-facility--img" src="../src/images/about_us-pages/facility-section/facility-image2@2x.png" alt="レーザー治療器画像">
-                    <figcaption class="p-facility__contents--inner">
-                        <p class="p-facility__inner--title">レーザー治療器</p>
-                        <p class="p-facility__inner--description">
-                            痛みを軽減し、治癒を促進するレーザー治療器を使用しています。虫歯の治療や歯茎の治療において、高精度かつ低侵襲な治療が可能です。出血や痛みが少なく、治療後の回復が早いのが特徴です。
-                        </p>
-                    </figcaption>
-                </figure>
-                <figure class="p-section__facility--contents">
-                    <img class="p-facility--img" src="../src/images/about_us-pages/facility-section/facility-image3@2x.png" alt="滅菌対策設備画像">
-                    <figcaption class="p-facility__contents--inner">
-                        <p class="p-facility__inner--title">滅菌対策設備</p>
-                        <p class="p-facility__inner--description">
-                            徹底した衛生管理を行うため、最新の滅菌対策設備を完備しています。器具の洗浄・消毒には最新の滅菌機器を使用し、院内感染の予防に努めています。患者様が安心して治療を受けられる環境を常に維持しています。
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="p-section__facility--inner col-2">
-                <figure class="p-section__facility--contents">
-                    <img class="p-facility--img" src="../src/images/about_us-pages/facility-section/facility-image4@2x.png" alt="X線装置画像">
-                    <figcaption class="p-facility__contents--inner">
-                        <p class="p-facility__inner--title">3D光学スキャン</p>
-                        <p class="p-facility__inner--description">
-                            小型カメラでお口の中をわずか数分スキャンするだけで歯型を採ることができます。型取りの負担を軽減し、嘔吐反射の強い方も安心です。さらに精密なスキャニング技術で得た情報を元に作られるマウスピース型矯正装置は高精度に仕上がるため、矯正治療の精度・効率性が向上します。
-                        </p>
-                    </figcaption>
-                </figure>
-                <figure class="p-section__facility--contents">
-                    <img class="p-facility--img" src="../src/images/about_us-pages/facility-section/facility-image5@2x.png" alt="レーザー治療器画像">
-                    <figcaption class="p-facility__contents--inner">
-                        <p class="p-facility__inner--title">高性能洗浄器</p>
-                        <p class="p-facility__inner--description">
-                            滅菌処理を行う前に器具の汚れを洗浄し、熱水消毒、乾燥まで行う器械です。手洗いでは不十分な血液や有機質的な汚れを徹底的に除去し、その後の滅菌効果を高めます。
-                        </p>
-                    </figcaption>
-                </figure>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 会社概要 -->
-    <section id="p-section--company" class="p-section--company">
-        <div class="p-section__company--wrapper">
-            <div class="p-about-us--subpage__title">
-                <h2 class="c-section--title">会社概要</h2>
-                <p class="c-section--sub-title">Company overview</p>
+        <!-- footer section -->
+        <footer class="l-footer">
+            <div class="l-footer__inner">
+                <a href="./index.html" class="l-footer--logo">
+                    <img src="./images/ASSIST DENTAL CLINIC@2x.webp" alt="footerロゴ画像" />
+                </a>
+                <nav class="l-footer__nav">
+                    <ul class="l-footer__nav-list">
+                        <li class="l-footer__nav-item">
+                            <a href="">新着情報</a>
+                        </li>
+                        <li class="l-footer__nav-item">
+                            <a href="">診察内容</a>
+                        </li>
+                        <li class="l-footer__nav-item">
+                            <a href="">治療の流れ</a>
+                        </li>
+                        <li class="l-footer__nav--item--dropdown">
+                            <button type="button" class="btn btn-dark dropdown-toggle" id="l-footer__dropdown--Menu-button">当院について</button>
+                            <ul class="l-footer__dropdown--list" id="l-footer__dropdown--Menu">
+                                <li>
+                                    <a class="l-footer__dropdown--item" href="#" target="_blank">院長挨拶</a>
+                                </li>
+                                <li>
+                                    <a class="l-footer__dropdown--item" href="#" target="_blank">設備紹介</a>
+                                </li>
+                                <li>
+                                    <a class="l-footer__dropdown--item" href="#" target="_blank">会社概要</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="l-footer__nav-item">
+                            <a href="">プライバシーポリシー</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="p-section__company--inner">
-                <table class="info-table">
-                    <tr>
-                        <th>商号</th>
-                        <td>ASSIST DENTAL CLINIC</td>
-                    </tr>
-                    <tr>
-                        <th>設立</th>
-                        <td>2024年1月1日</td>
-                    </tr>
-                    <tr>
-                        <th>所在地</th>
-                        <td>&#12306;111-1111<br>東京都中央区銀座6-1-1</td>
-                    </tr>
-                    <tr>
-                        <th>代表者</th>
-                        <td>田中　太郎</td>
-                    </tr>
-                    <tr>
-                        <th>資本金</th>
-                        <td>1000万</td>
-                    </tr>
-                    <tr>
-                        <th>WEBサイト</th>
-                        <td><a href="https://www.assist-dental.jp" target="_blank">https://www.assist-dental.jp</a></td>
-                    </tr>
-                    <tr>
-                        <th>事業内容</th>
-                        <td>一般歯科・予防歯科・矯正歯科・審美歯科・インプラント治療・小児歯科・口腔外科</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </section>
+            <p class="l-footer__copyright">&copy;2024 ASSIST DENTAL CLINIC All Rights Reserved.</p>
+        </footer>
 
-    <!-- footer section -->
-    <footer class="l-footer">
-        <div class="l-footer__inner">
-        <a href="./index.html" class="l-footer--logo">
-            <img src="./images/ASSIST DENTAL CLINIC@2x.webp" alt="footerロゴ画像">
-        </a>
-        <nav class="l-footer__nav">
-            <ul class="l-footer__nav-list">
-            <li class="l-footer__nav-item"><a href="">新着情報</a></li>
-            <li class="l-footer__nav-item"><a href="">診察内容</a></li>
-            <li class="l-footer__nav-item"><a href="">治療の流れ</a></li>
-            <li class="l-footer__nav--item--dropdown">
-                <button type="button" class="btn btn-dark dropdown-toggle" id="l-footer__dropdown--Menu-button">
-                当院について
-                </button>
-                <ul class="l-footer__dropdown--list" id="l-footer__dropdown--Menu">
-                    <li><a class="l-footer__dropdown--item" href="#" target="_blank">院長挨拶</a></li>
-                    <li><a class="l-footer__dropdown--item" href="#" target="_blank">設備紹介</a></li>
-                    <li><a class="l-footer__dropdown--item" href="#" target="_blank">会社概要</a></li>
-                </ul>
-            </li>
-            <li class="l-footer__nav-item"><a href="">プライバシーポリシー</a></li>
-            </ul>
-        </nav>
-        </div>
-        <p class="l-footer__copyright">
-            &copy;2024 ASSIST DENTAL CLINIC All Rights Reserved.
-        </p>
-    </footer>
-
-<!-- JavaScript -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script defer src="./js/script.min.js"></script>
-<script src="./js/swiper-bundle.min.js"></script>
-<script src="./js/script.js"></script>
-</body>
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script defer src="./js/script.min.js"></script>
+        <script src="./js/swiper-bundle.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
