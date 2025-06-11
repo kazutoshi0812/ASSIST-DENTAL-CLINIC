@@ -25,7 +25,11 @@
         <!-- Yahooのクローラーにインデックスしないよう指示 -->
         <meta name="slurp" content="noindex, nofollow" />
         <!-- ファビコン -->
-        <link rel="icon" href="./images/favicon-image/favicon@2x.webp" type="image/png" />
+        <link rel="icon" href="./images/favicon-image/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="./images/favicon-image/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="./images/favicon-image/apple-touch-icon.png" />
+        <link rel="manifest" href="./images/favicon-image/site.webmanifest" />
+        <meta name="theme-color" content="#ffffff" />
         <!-- css -->
         <link rel="stylesheet" href="./css/styles.min.css" />
     </head>
@@ -79,20 +83,20 @@
                 </div>
                 <form class="c-contact__form">
                     <div class="c-contact__form--group">
-                        <label for="email" class="c-contact__label"> <span class="c-contact__required-mark">必須</span> メールアドレス </label>
+                        <p for="email" class="c-contact__label"> <span class="c-contact__required-mark">必須</span> メールアドレス </p>
                         <input type="email" id="email" class="c-contact__input" placeholder="例) example@example.com" required />
                     </div>
                     <div class="c-contact__form--group">
-                        <label for="name" class="c-contact__label"> <span class="c-contact__required-mark">必須</span> お名前 </label>
+                        <p for="name" class="c-contact__label"> <span class="c-contact__required-mark">必須</span> お名前 </p>
                         <input type="text" id="name" class="c-contact__input" placeholder="田中 大郎" required />
                     </div>
                     <div class="c-contact__form--group">
-                        <label for="furigana" class="c-contact__label"> <span class="c-contact__required-mark">必須</span> ふりがな </label>
+                        <p for="furigana" class="c-contact__label"> <span class="c-contact__required-mark">必須</span> ふりがな </p>
                         <input type="text" id="furigana" class="c-contact__input" placeholder="たなか たろう" required />
                     </div>
                     <p class="c-contact__form--notice">※携帯メールアドレスの場合、迷惑メール対策によりメールが受信できない事例が多発しております。恐れ入りますが、各種携帯電話会社のドメイン制限の解除をお願い致します。</p>
                     <div class="form-group">
-                        <label class="required-label">性別</label>
+                        <p class="required-label">性別</p>
                         <div class="radio-group">
                             <label class="c-contact__radio--label"><input type="radio" name="gender" value="male" class="c-contact__radio-input" /> 男性</label>
                             <label class="c-contact__radio--label"><input type="radio" name="gender" value="female" class="c-contact__radio-input" /> 女性</label>
@@ -100,18 +104,18 @@
                         </div>
                     </div>
                     <div class="c-contact__form--group">
-                        <label class="c-contact__label"><span class="c-contact__required-mark">必須</span>生年月日</label>
+                        <p class="c-contact__label"><span class="c-contact__required-mark">必須</span>生年月日</p>
                         <input type="text" class="c-contact__input" placeholder="例）19800101" />
                     </div>
                     <div class="c-contact__form--group">
-                        <label class="c-contact__label"><span class="c-contact__required-mark">必須</span>当院での受診</label>
+                        <p class="c-contact__label"><span class="c-contact__required-mark">必須</span>当院での受診</p>
                         <div class="c-contact__radio-group">
                             <label class="c-contact__radio--label"><input type="radio" name="visit" value="first" class="c-contact__radio-input" /> 初めて</label>
                             <label class="c-contact__radio--label"><input type="radio" name="visit" value="repeat" checked class="c-contact__radio-input" /> 2回目以降</label>
                         </div>
                     </div>
                     <div class="c-contact__form--group">
-                        <label class="c-contact__label"><span class="c-contact__required-mark">必須</span>診療内容を選択してください。</label>
+                        <p class="c-contact__label"><span class="c-contact__required-mark">必須</span>診療内容を選択してください。</p>
                         <div class="c-contact__button-group">
                             <input class="c-contact__button" type="button" value="虫歯" />
                             <input class="c-contact__button" type="button" value="顎関節症" />
@@ -124,7 +128,7 @@
                         </div>
                     </div>
                     <div class="c-contact__form--group">
-                        <label class="c-contact__label"><span class="c-contact__required-mark">必須</span>担当医へのメッセージ</label>
+                        <p class="c-contact__label"><span class="c-contact__required-mark">必須</span>担当医へのメッセージ</p>
                         <p class="c-contact__form--notice message-text">※担当医へのメッセージ、電話がつつながりやすい時間があればこの欄にご記入ください。</p>
                         <textarea class="c-contact__textarea" name="" id="" cols="30" lows="10"></textarea>
                     </div>
@@ -134,7 +138,7 @@
                     </div>
                 </form>
                 <button type="submit" class="c-button c-contact__link--button">
-                    <a href="contact-submit.html" target="_blank" class="c-button c-contact--button">
+                    <a href="contact-submit.html" target="_blank" class="c-button c-contact__submit-button">
                         送信する
                         <span class="c-button--arrow c-contact--arrow"></span>
                     </a>
@@ -169,8 +173,7 @@
         </footer>
         <!-- JavaScript -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script defer src="./js/script.min.js"></script>
         <script src="./js/swiper-bundle.min.js"></script>
-        <script src="./js/script.js"></script>
+        <script src="./js/script.min.js"></script>
     </body>
 </html>

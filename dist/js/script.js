@@ -35,17 +35,8 @@ jQuery(function ($) {
   });
 
   // 診療内容ボタンのクリックイベント
-  $('.c-contact__button').on('click', function() {
+  $(document).on('click', '.c-contact__button', function() {
+    console.log('Button clicked');
     $(this).toggleClass('is-active');
   });
 });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const buttons = document.querySelectorAll('.c-contact__button');
-
-//   buttons.forEach(button => {
-//       button.addEventListener('click', function () {
-//           this.classList.toggle('is-active');
-//       });
-//   });
-// });
