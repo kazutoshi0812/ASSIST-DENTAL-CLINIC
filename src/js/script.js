@@ -36,7 +36,45 @@ jQuery(function ($) {
 
   // 診療内容ボタンのクリックイベント
   $(document).on('click', '.c-contact__button', function() {
-    console.log('Button clicked');
     $(this).toggleClass('is-active');
   });
+
+  // ハンバーガーメニュー
+  const $hamburger = $('.l-header__hamburger');
+  const $headerInner = $('.l-header__inner');
+  const $body = $('body');
+
+  if ($hamburger.length) {
+    $hamburger.on('click', function() {
+      $(this).toggleClass('is-active');
+      $headerInner.toggleClass('open');
+      $body.toggleClass('is-drawerActive');
+    });
+  }
+
+  // メニューリンクをクリックしたらドロワーを閉じる
+  $('.l-header__nav--list a').on('click', function() {
+    $hamburger.removeClass('is-active');
+    $headerInner.removeClass('open');
+    $body.removeClass('is-drawerActive');
+  });
+
+  // fade in
+  $(window).scroll(function () {
+    const wHeight = $(window).height();
+    const scrollAmount = $(window).scrollTop();
+
+    // .reason__inner--slide-left要素に対する処理
+    $('.p-mv__image').each(function () {
+      const targetPosition = $(this).offset().top;
+      if (scrollAmount > targetPosition - wHeight + 60) {
+        if (!$(this).hasClass("fadeIn")) {
+          $(this).addClass("fadeIn");
+        }
+      } else {
+        $(this).removeClass("fadeIn");
+      }
+    });
+  });
+
 });
