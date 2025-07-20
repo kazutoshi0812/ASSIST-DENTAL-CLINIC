@@ -2,23 +2,28 @@
 @use "sass:map";
 
 // インナー幅
-$innerWidth: 1024px;
+$innerWidth: 1000px;
 
 // 余白
 $padding-pc: 25px;
-$padding-sp: 20px;
+$padding-sp: 15px;
 
 // フォント
-$font-main: "";
-$font-sub: "";
+$font-main: '"Noto Sans JP", sans-serif';
+$font-sub: '"League Script", cursive';
+$font-en: '"Lato", sans-serif';
 
 // 色指定
 $black: #333;
 $white: #fff;
-$primary: #7BD1D5;
-$text-color: #484848;
+$primary-color: #7BD1D5;
+$secondary-color: #A4DDE0;
+$text-main: #484848;
+$text-sub: #845C95;
 $border-color: #707070;
 $background-color: #EDF5F5;
+$secondary-background: #F894B7;
+
 
 // ブレイクポイント
 $breakpoints: (

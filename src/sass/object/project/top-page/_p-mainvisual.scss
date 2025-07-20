@@ -2,12 +2,17 @@
 
 .p-main-view {
     position: relative;
-    height: 550px;
-    overflow: hidden;
+    height: 34rem;
 }
-
+@media screen and (max-width: 768px) {
+    .p-main-view {
+        height: auto;
+        z-index: 999;
+    }
+}
 .p-mv__wrapper {
-    position: relative;
+    display: flex;
+    justify-content: end;
 }
 
 .p-message--catch-copy {
@@ -20,34 +25,35 @@
     transform: rotate(-7deg);
 }
 .p-mv__main--catch-copy {
-    font-size: clamp(1.125rem, 2vw, 3.25rem);
+    font-size: clamp(1.125rem, 3vw, 3.25rem);
     color: #7bd1d5;
     position: absolute;
-    top: 170px;
-    left: 120px;
+    top: 3.75rem;
+    left: 7.4rem;
     z-index: 10;
     transform: rotate(-7deg);
 }
-@media screen and (max-width: 1024px) {
-    .p-mv__main--catch-copy {
-        position: absolute;
-        
-    }
-
-}
+// @media screen and (max-width: 1024px) {
+//     .p-mv__main--catch-copy {
+//         position: absolute;
+//     }
+// }
 
 .p-mv__image {
-    position: absolute;
-    right: 0;
     width: 70%;
-    height: auto;
+    height: 37rem;
     object-fit: cover;
     border-radius: 50px 0 0 50px;
+    display: flex;
+    justify-content: end;
 }
 .p-mv__title {
     position: absolute;
-    top: 266px;
-    left: 201px;
+    top: 12rem;
+    left: 12.5rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 @media screen and (max-width: 1024px) {
     .p-mv__image {
@@ -55,14 +61,51 @@
     }
     .p-mv__title {
         position: absolute;
-        top: 266px;
-        left: 201px;
+        display: inline-flex;
+        left: 0.9rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .p-mv__title {
+        position: absolute;
+        top: 11rem;
+        left: 1rem;
+        margin-top: 2rem;
+        width: 100%;
+        align-items: flex-start;
+        order: 2;
+    }
+    .p-mv__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        align-items: end;
+    }
+    // .p-mv__main--catch-copy {
+    //     order: 1;
+    // }
+    .p-mv__image {
+        height: 14.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .p-mv__blog {
+        margin-top: -213px; /* ← 上にオーバーラップ */
+        padding-top: 261px;  /* ← 内部コンテンツの開始位置 */
+        padding-bottom: 105px;  /* ← 内部コンテンツの開始位置 */
+        position: relative;
+        background-image: url(../images/bg-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
 
 
 .p-mv__main--title {
-    font-size: 2.125rem;
+    font-size: clamp(1.375rem, 2.5vw, 2.125rem);
     color: #fff;
     background-color: $primary;
 }
@@ -90,7 +133,12 @@
     background-position: center;
     background-size: cover;
 }
-
+@media screen and (max-width: 768px) {
+    .p-mv__blog--contents {
+        background-image: none;
+        padding-top: 3rem;
+    }
+}
 .p-mv__blog--list {
     padding-left: 20px;
 }
