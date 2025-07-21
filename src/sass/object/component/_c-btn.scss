@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.c-btn {
+    font-size: myrem(14);
+    font-weight: bold;
+    color: $text-sub;
+    line-height: calc(20 / 14);
+    letter-spacing: .1em;
+    display: inline-flex;
+    width: 100%;
+    padding: myrem(5);
+    @include mq(md) {
+
+    }
+}
