@@ -7,9 +7,45 @@
     line-height: calc(20 / 14);
     letter-spacing: .1em;
     display: inline-flex;
+    gap: myrem(10);
     width: 100%;
     padding: myrem(5);
     @include mq(md) {
 
     }
+}
+
+.c-btn span {
+    display: inline-flex;
+    background: $text-sub;
+    width: myrem(16);
+    height: myrem(16);
+    border-radius: 50%;
+    position: relative;
+    @include mq(md) {
+
+    }
+}
+
+.c-btn span::before,
+.c-btn span::after {
+    content: "";
+    position: absolute;
+    background: $white;
+    border-radius: .1em;
+    rotate: 45deg;
+    @include mq(md) {
+
+    }
+}
+
+.c-btn span::before {
+    width: 1px;
+    height: myrem(5);
+    translate: myrem(8) myrem(7);
+}
+.c-btn span::after {
+    width: myrem(5);
+    height: 1px;
+    translate: myrem(6) myrem(6);
 }
